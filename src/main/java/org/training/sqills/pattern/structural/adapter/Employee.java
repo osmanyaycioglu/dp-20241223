@@ -1,8 +1,13 @@
-package org.training.sqills.pattern.playground.printer;
+package org.training.sqills.pattern.structural.adapter;
+
+import org.training.sqills.pattern.playground.annotations.AdapterMapping;
 
 public class Employee {
+    @AdapterMapping(target = "name",targetClass = Person.class)
     private String firstName;
+    @AdapterMapping(target = "middleName",targetClass = Person.class)
     private String middleName;
+    @AdapterMapping(target = "surname",targetClass = Person.class)
     private String lastName;
 
     public String getFirstName() {

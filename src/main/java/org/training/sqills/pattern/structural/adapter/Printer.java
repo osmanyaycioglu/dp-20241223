@@ -1,6 +1,6 @@
-package org.training.sqills.pattern.playground.printer;
+package org.training.sqills.pattern.structural.adapter;
 
-public final class Printer {
+public class Printer {
 
     public String print(Person personParam) {
         return "Sayın : " + personParam.getName() + " " + personParam.getMiddleName() + " " + personParam.getSurname();

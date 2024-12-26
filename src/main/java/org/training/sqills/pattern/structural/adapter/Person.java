@@ -1,8 +1,8 @@
-package org.training.sqills.pattern.playground.printer;
+package org.training.sqills.pattern.structural.adapter;
 
 public class Person {
     private String name;
-    private  String middleName;
+    private String middleName;
     private String surname;
 
     public String getName() {
@@ -27,5 +27,14 @@ public class Person {
 
     public void setSurname(final String surnameParam) {
         surname = surnameParam;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+               "name='" + name + '\'' +
+               ", middleName='" + middleName + '\'' +
+               ", surname='" + surname + '\'' +
+               '}';
     }
 }
